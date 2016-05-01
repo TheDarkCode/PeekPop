@@ -13,7 +13,7 @@ class PeekPopView: UIView {
     //MARK: Constants
     
     // These are 'magic' values
-    let targePreviewPadding = CGSizeMake(28, 140)
+    let targetPreviewPadding = CGSizeMake(28, 140)
     
     var sourceViewCenter = CGPoint.zero
     var sourceToCenterXDelta: CGFloat = 0.0
@@ -92,8 +92,8 @@ class PeekPopView: UIView {
         sourceViewCenter = CGPointMake(sourceViewRect.origin.x + sourceViewRect.size.width/2, sourceViewRect.origin.y + sourceViewRect.size.height/2)
         sourceToCenterXDelta = self.bounds.size.width/2 - sourceViewCenter.x
         sourceToCenterYDelta = self.bounds.size.height/2 - sourceViewCenter.y
-        sourceToTargetWidthDelta = self.bounds.size.width - targePreviewPadding.width - sourceViewRect.size.width
-        sourceToTargetHeightDelta = self.bounds.size.height - targePreviewPadding.height - sourceViewRect.size.height
+        sourceToTargetWidthDelta = self.bounds.size.width - targetPreviewPadding.width - sourceViewRect.size.width
+        sourceToTargetHeightDelta = self.bounds.size.height - targetPreviewPadding.height - sourceViewRect.size.height
 
     }
     
